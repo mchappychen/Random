@@ -8,8 +8,8 @@ class RNG:
             self.numbers = []
             self.repopulate()
     def univariate(self,n=1):
-        if n > 1000:
-            raise Exception('RNG must be below 1000 digits')
+        if n > 1024:
+            raise Exception('RNG must be below 1024 bits')
         if len(self.numbers)<n:
             self.repopulate()
         numbers = self.numbers[:n]
