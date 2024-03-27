@@ -8,4 +8,4 @@ For example, if you want to generate a random number from 0 to 4, the highest nu
 
 QRNG API only allows 1 call per minute, so we make a request for 1024 hex codes (0-255 in decimal), and convert it into binary by doing % 2, and store it as a file. Only when we run out of bits in our file do we make another API call to QRNG.
 
-This also means this random number generator I made only supports numbers up to 2^1024-1 but that's a number between googol and googolplex so you should be fine.
+This also means this random number generator I made only supports numbers up to 2^1024-1 but that's a number higher than googol so you should be fine.
